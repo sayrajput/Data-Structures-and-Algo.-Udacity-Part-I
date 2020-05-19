@@ -1,0 +1,132 @@
+_
+TASK 0:
+
+9 lines of code total
+having constant running time for each so worst-case complexity for each O(1)
+so,    9*O(1)
+After simplifying...
+overall O(1)
+
+Worst case complexity : O(1)
+___________________________________________________________________________________________________________________________________________
+__
+TASK 1:
+
+for lines of code having constant running time (worst case complexity O(1) )
+This includes opening file , declaring list,print etc.
+11*O(1)  = O(11)     ------------(i)
+
+1st 'for loop' having worst case complexity O(n)
+    extend() function within for loop (worst case complexity of extend is O(k) here k is 2 in my solution
+
+we get, O(n)*O(k) i.e. O(n)*O(2) = O(2n) -----------(ii)
+
+
+2nd 'for loop' having worst case complexity O(n)
+     extend() function within for loop (worst case compl. of extend is O(k) again k is 2 in my solution
+
+we get, O(n)*O(k) i.e. O(n)*O(2) = O(2n)  -----------(iii)
+
+Finally,
+adding (i),(ii) and (iii)
+we get O(11) + O(2n) + O(2n)
+
+after simplyfying....
+Worst case complexity : O(n)
+
+_____________________________________________________________________________________________________________________________________________________
+
+___
+TASK 2:
+
+for lines of code having constant running time in worst case
+This includes declaring dict,opening files,print etc.
+for 9 lines its 9*O(1)  
+we get, O(9)     ---------(i)
+
+1st 'for loop' having worst case complexity O(n)
+       if condition.....'in' inside for loop  -worst case complexity for 'in' is O(n)
+       else ...for worst case we may have to go through 'else' condition when if condn turns False.. also here worst case complexity for setting value is O(1)
+we get, O(n)*(O(n)+O(1)) = O(n^2)    ---------(ii)
+
+2nd 'for loop' having worst case complexity O(n)
+       if condition--- 'in' inside for loop  -worst case complexity for 'in' is O(n)
+       else-- for worst case we may have to go through 'else' condition ...worst case complexity is O(1) for setting value to dict
+we get, O(n)*(O(n)+O(1)) = O(n^2)    ----------(iii)
+'max' function has worst case complexity of O(n)   --------(iv)
+
+Finally,
+adding (i),(ii),(iii)and (iv)
+we get O(9)+ O(n^2) + O(n^2) + O(n)
+
+after simplying..... 
+Worst case complexity: O(n^2)
+______________________________________________________________________________________________________________________________________________________
+____
+TASK 3:
+
+for lines of code having constant running time in worst case
+20*O(1) i.e. O(20)            -----------(i)
+
+1st 'for loop' having worst case complexity O(n)
+      if condition  'startswith' function having O(1) worst case complexity
+            'append' function having O(1) worst case complexity
+we get, O(n)*O(1) i.e.  O(n)   ---------(ii)     
+
+2nd 'for loop' having worst case complexity O(n)
+      if condition 'startswith' function having O(1) worst case complexity
+                  'find' opration having worst case complexity of O(n*m) m=1 here as substring is of length 1
+                   'append' oprn having W.C.T.C  of O(1)
+      else condition 
+                     if 'startswith' has O(1) worst case compl.
+                         'append' oprn having worst case time comp. O(1)
+                     else
+                          'append' having worst case time comp. O(1)
+we get, O(n)*(O(n)+O(1)) + O(1) + O(1)  i.e.   O(n^2) + O(n) + O(2)    -------------(iii)
+3rd 'for loop' having worst case complexity O(n)
+      print item as per for loop so worst case compl. O(1)
+we get, O(n)       --------------------(iv)
+
+4th 'for loop' having worst case complexity O(n)
+      'in' having worst case compl. O(n)
+           'append' having worst case compl. O(1)
+we get, O(n)*(O(n)*O(1) i.e. O(n^2)    --------------------(v)
+
+finally
+adding (i),(ii),(iii),(iv)and(v) we get
+O(20) + O(n) + O(n^2) + O(n) + O(2) + O(n) + O(n^2)
+
+After simplifying...
+Worst case complexity: O(n^2)
+        
+_______________________________________________________________________________________________________________________________________________________
+_____
+TASK 4:
+
+For lines of code having constant running time (worst case complexity O(1) )
+This includes opening files,declaring sets,print etc.
+12*O(1) i.e. O(12)    -------(i)
+
+1st 'for loop' having worst case running time O(n)
+       'add' operation to list having worst case time compl. O(1)
+       'add' operation 2nd having the same  O(1)
+we get, O(n)*(O(1)+O(1)) i.e. O(2n)    ------(ii)
+
+
+2nd 'for loop' having worst case running time O(n)
+       'add' operation to list having worst case time compl. O(1)
+       'add' operation 2nd having the same  O(1)
+we get, O(n)*(O(1)+O(1)) i.e. O(2n)    ------(iii)
+
+sort() having the worst case complexity of O(nlogn)  ------(iv)
+
+3rd 'for loop' having worst case complexity of O(n)
+      'print' operation(having worst case time complexity O(1) ) under for loop
+we get, O(n)*O(1) i.e. O(n)      --------(v)
+
+Finally,
+adding (i),(ii),(iii),(iv)and (v)
+O(12) + O(2n) + O(2n) + O(nlogn) + O(n)
+
+After simplifying...
+Worst  case complexity: O(n) 
